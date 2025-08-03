@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://study-notion-frontend-nine-lyart.vercel.app/",
         credentials: true,
     })
 )
@@ -57,4 +57,5 @@ app.get("/", (req, res)=>{
 
 app.listen(PORT, ()=>{
     console.log(`App is running at port: ${PORT}`);
+
 })
